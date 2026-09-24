@@ -667,6 +667,35 @@
     },
     {
       "dependencies": ["takumi-pdf", "@takumi-rs/helpers"],
+      "description": "Lesson Plan PDF block (takumi)",
+      "files": [
+        {
+          "path": "registry/bases/takumi/blocks/lesson-plan/lesson-plan.tsx",
+          "target": "components/pdf/blocks/lesson-plan/lesson-plan.tsx",
+          "type": "registry:block"
+        },
+        {
+          "path": "registry/bases/takumi/blocks/lesson-plan/lesson-plan.types.ts",
+          "target": "components/pdf/blocks/lesson-plan/lesson-plan.types.ts",
+          "type": "registry:block"
+        }
+      ],
+      "name": "takumi/lesson-plan",
+      "registryDependencies": [
+        "@pdfcn/takumi/utils",
+        "@pdfcn/takumi/badge",
+        "@pdfcn/takumi/list",
+        "@pdfcn/takumi/page-footer",
+        "@pdfcn/takumi/page-header",
+        "@pdfcn/takumi/section",
+        "@pdfcn/takumi/table",
+        "@pdfcn/takumi/text"
+      ],
+      "title": "Lesson Plan",
+      "type": "registry:block"
+    },
+    {
+      "dependencies": ["takumi-pdf", "@takumi-rs/helpers"],
       "description": "Gift Certificate PDF block (takumi)",
       "files": [
         {
@@ -1867,6 +1896,35 @@
         "@pdfcn/forme/text"
       ],
       "title": "Invoice Modern",
+      "type": "registry:block"
+    },
+    {
+      "dependencies": ["@formepdf/react", "@formepdf/core"],
+      "description": "Lesson Plan PDF block (forme)",
+      "files": [
+        {
+          "path": "registry/bases/forme/blocks/lesson-plan/lesson-plan.tsx",
+          "target": "components/pdf/blocks/lesson-plan/lesson-plan.tsx",
+          "type": "registry:block"
+        },
+        {
+          "path": "registry/bases/forme/blocks/lesson-plan/lesson-plan.types.ts",
+          "target": "components/pdf/blocks/lesson-plan/lesson-plan.types.ts",
+          "type": "registry:block"
+        }
+      ],
+      "name": "forme/lesson-plan",
+      "registryDependencies": [
+        "@pdfcn/forme/utils",
+        "@pdfcn/forme/badge",
+        "@pdfcn/forme/list",
+        "@pdfcn/forme/page-footer",
+        "@pdfcn/forme/page-header",
+        "@pdfcn/forme/section",
+        "@pdfcn/forme/table",
+        "@pdfcn/forme/text"
+      ],
+      "title": "Lesson Plan",
       "type": "registry:block"
     },
     {

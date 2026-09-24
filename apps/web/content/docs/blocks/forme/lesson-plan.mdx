@@ -1,0 +1,124 @@
+---
+title: "Lesson Plan"
+description: "Printable lesson plan block for teachers and educators with objectives, activities, materials, differentiation, and assessment criteria."
+---
+
+<ComponentPreview base="forme" name="lesson-plan" hideCode />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @pdfcn/forme/lesson-plan
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @formepdf/react @formepdf/core
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  src="registry/bases/forme/blocks/lesson-plan/lesson-plan.tsx"
+  base="forme"
+  title="components/pdf/blocks/lesson-plan/lesson-plan.tsx"
+/>
+
+<ComponentSource
+  src="registry/bases/forme/blocks/lesson-plan/lesson-plan.types.ts"
+  base="forme"
+  title="components/pdf/blocks/lesson-plan/lesson-plan.types.ts"
+/>
+
+<ComponentSource
+  src="registry/bases/forme/components/theme-provider.tsx"
+  base="forme"
+  title="components/pdf/theme-provider.tsx"
+/>
+
+<ComponentSource
+  src="registry/bases/forme/lib/resolve-color.ts"
+  base="forme"
+  title="lib/resolve-color.ts"
+/>
+
+<ComponentSource
+  src="registry/themes/professional.ts"
+  base="forme"
+  title="lib/pdf-themes/professional.ts"
+/>
+
+<ComponentSource
+  src="registry/themes/primitives.ts"
+  base="forme"
+  title="lib/pdf-themes/primitives.ts"
+/>
+
+<ComponentSource
+  src="registry/types/pdf-themes.ts"
+  base="forme"
+  title="types/pdf-themes.ts"
+/>
+
+<ComponentSource
+  src="registry/types/pdf-components.ts"
+  base="forme"
+  title="types/pdf-components.ts"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { LessonPlanDocument } from "@/components/pdf/lesson-plan";
+```
+
+```tsx
+<LessonPlanDocument />
+```
+
+## API Reference
+
+### LessonPlanProps
+
+| Prop                | Type                   | Description                                                |
+| ------------------- | ---------------------- | ---------------------------------------------------------- |
+| `subject`           | `string`               | Academic discipline or subject (e.g. "Mathematics").       |
+| `gradeLevel`        | `string`               | Target grade or student cohort (e.g. "8th Grade").         |
+| `lessonTitle`       | `string`               | Lesson plan title or topic.                                |
+| `date`              | `string`               | Date the lesson is scheduled (e.g. "September 15, 2026").   |
+| `teacherName`       | `string`               | Name of the instructor or educator.                        |
+| `duration`          | `string`               | Estimated lesson duration (e.g. "50 minutes").             |
+| `essentialQuestion` | `string?`              | Guiding inquiry question for student reflection.           |
+| `objectives`        | `string[]`             | Learning objectives (SWBAT - Students Will Be Able To).    |
+| `standards`         | `string[]?`            | Aligned educational standards codes (e.g. CCSS).           |
+| `materials`         | `string[]`             | Required classroom resources and equipment.                |
+| `sequence`          | `LessonSequenceItem[]` | Timed instructional table with activities and description. |
+| `differentiation`   | `string[]?`            | Accommodations and modifications for diverse learners.     |
+| `assessment`        | `LessonAssessment`     | Formative checks and summative evaluation methods.         |
+| `homework`          | `string?`              | Extension or home assignment details.                      |
+| `reflection`        | `string?`              | Post-instruction notes or blank teacher reflection prompt. |
+| `accentColor`       | `string?`              | Primary theme accent for badges and borders.               |

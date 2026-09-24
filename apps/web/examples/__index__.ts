@@ -17,6 +17,7 @@ import forme_invoice_minimal from "@/examples/forme/invoice-minimal";
 import forme_invoice_modern from "@/examples/forme/invoice-modern";
 import forme_keep_together from "@/examples/forme/keep-together";
 import forme_key_value from "@/examples/forme/key-value";
+import forme_lesson_plan from "@/examples/forme/lesson-plan";
 import forme_link from "@/examples/forme/link";
 import forme_list from "@/examples/forme/list";
 import forme_meeting_minutes from "@/examples/forme/meeting-minutes";
@@ -57,6 +58,7 @@ import takumi_invoice_minimal from "@/examples/takumi/invoice-minimal";
 import takumi_invoice_modern from "@/examples/takumi/invoice-modern";
 import takumi_keep_together from "@/examples/takumi/keep-together";
 import takumi_key_value from "@/examples/takumi/key-value";
+import takumi_lesson_plan from "@/examples/takumi/lesson-plan";
 import takumi_link from "@/examples/takumi/link";
 import takumi_list from "@/examples/takumi/list";
 import takumi_medical_intake_form from "@/examples/takumi/medical-intake-form";
@@ -103,6 +105,7 @@ export const demos: Record<BaseName, DemoMap> = {
     "invoice-modern": forme_invoice_modern,
     "keep-together": forme_keep_together,
     "key-value": forme_key_value,
+    "lesson-plan": forme_lesson_plan,
     link: forme_link,
     list: forme_list,
     "meeting-minutes": forme_meeting_minutes,
@@ -145,6 +148,7 @@ export const demos: Record<BaseName, DemoMap> = {
     "invoice-modern": takumi_invoice_modern,
     "keep-together": takumi_keep_together,
     "key-value": takumi_key_value,
+    "lesson-plan": takumi_lesson_plan,
     link: takumi_link,
     list: takumi_list,
     "medical-intake-form": takumi_medical_intake_form,
